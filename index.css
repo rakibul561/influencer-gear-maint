@@ -111,6 +111,16 @@ main {
     margin: 10px 5px;
 }
 
+.chacked {
+    color: orange;
+}
+
+.rating {
+    display: flex;
+    margin-left: 15px;
+    text-decoration: none;
+
+}
 .image img,
 h1,
 h2,
@@ -201,7 +211,70 @@ p {
 }
 
 .footer-content {
-    color:  #D9DBE1;
+    color: #D9DBE1;
     font-size: 14px;
     font-weight: 700;
+}
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .logo-title,
+    .banner,
+    nav,
+    .image 
+    {
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .Popular-title{
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 10px;
+        padding-right: 30px;
+        
+    }
+  
+    
+    header,nav{
+        padding: 5px 0px;
+    }
+   
+    .img-container{
+        width: 20%;
+        padding-top: 40px;
+       
+    }
+    .logo-title{
+        width: 60%;
+        margin-left: 80px;
+        text-align: center;
+        margin:20px 10;
+        
+    }
+       .footer-title{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+       }
+       .text{
+        text-align: center;
+       }
 }
